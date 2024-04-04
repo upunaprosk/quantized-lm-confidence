@@ -45,3 +45,6 @@ lm_eval\
     --log_samples\
     --output_path "bloom-7b1-gptq-4bit.json"
 ```
+To evaluate the informativeness and reliability of generated answers on the TruthfulQA benchmark, refer to the official TruthfulQA [implementation](https://github.com/sylinrl/TruthfulQA).
+To fine-tune GPT-3 on truthfulQA data, follow the steps listed [here](https://github.com/sylinrl/TruthfulQA?tab=readme-ov-file#fine-tuning-gpt-3-for-evaluation).
+Note that, starting from January 2024, ```curie``` instance is no longer available. You can use ```davinci-002```instead.
