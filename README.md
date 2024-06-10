@@ -12,7 +12,7 @@ Use ```Quantization_AutoGPTQ.ipynb```. We have used Auto-GPTQ to quantize causal
 AutoGPTQ documentation: https://pypi.org/project/auto-gptq/ 
 
 ## Evaluation
-Use ```LLMs_eval.ipynb```.
+Use `LLMs_eval.ipynb`.
 
 To run an evaluation, use lm-eval-harness framework:
 ```
@@ -20,7 +20,7 @@ git clone https://github.com/upunaprosk/lm-evaluation-harness
 cd lm-evaluation-harness
 pip install -e .
 ```
-Run evaluation on selected [datasets](https://github.com/upunaprosk/lm-evaluation-harness/blob/master/docs/task_table.md).
+Run evaluation on selected [datasets](https://github.com/EleutherAI/lm-evaluation-harness/blob/add-siqa/docs/task_table.md).
 The example below is for quantized bloom; for non-compressed models, remove ```quantized``` and ```gptq_use_triton```.
 ```
 python main.py \
@@ -52,8 +52,8 @@ lm_eval\
 ```
 To evaluate the informativeness and reliability of generated answers on the TruthfulQA benchmark, refer to the official TruthfulQA [implementation](https://github.com/sylinrl/TruthfulQA).
 To fine-tune GPT-3 on truthfulQA data, follow the steps listed [here](https://github.com/sylinrl/TruthfulQA?tab=readme-ov-file#fine-tuning-gpt-3-for-evaluation).
-Note that, starting from January 2024, ```curie``` instance is no longer available. You can use ```davinci-002```instead.
+Note that, starting from January 2024, ```curie``` instance is no longer available. You can use ```davinci-002```instead. Follow [official guidelines](https://platform.openai.com/docs/guides/fine-tuning) to fine-tune the model on truthfulQA data.
 
 ## Calibration Errors
-To compute confidence, calibration errors, and entropy, use `Calibration_Error_Metrics.ipynb'.
+To compute confidence, calibration errors, and entropy, use `Calibration_Error_Metrics.ipynb`.
 You can find predictions for full-precision and quantized models [here](https://drive.google.com/file/d/1rlyD832HLa_mqU7JZbA06RhbNwKzpCPS/view?usp=sharing).
