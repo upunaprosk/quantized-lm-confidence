@@ -63,3 +63,30 @@ To evaluate the informativeness and reliability of generated answers on the Trut
     
 To compute confidence, calibration errors, and entropy, use `Calibration_Error_Metrics.ipynb`. You can find predictions for full-precision and quantized models [here](https://drive.google.com/file/d/1rlyD832HLa_mqU7JZbA06RhbNwKzpCPS/view?usp=sharing).
 </details>
+
+# Cite
+
+```
+@inproceedings{proskurina-etal-2024-quantization,
+    title = "When Quantization Affects Confidence of Large Language Models?",
+    author = "Proskurina, Irina  and
+      Brun, Luc  and
+      Metzler, Guillaume  and
+      Velcin, Julien",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2024",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-naacl.124",
+    pages = "1918--1928",
+    abstract = "Recent studies introduced effective compression techniques for Large Language Models (LLMs) via post-training quantization or low-bit weight representation. Although quantized weights offer storage efficiency and allow for faster inference, existing works have indicated that quantization might compromise performance and exacerbate biases in LLMs.This study investigates the confidence and calibration of quantized models, considering factors such as language model type and scale as contributors to quantization loss.Firstly, we reveal that quantization with GPTQ to 4-bit results in a decrease in confidence regarding true labels, with varying impacts observed among different language models. Secondly, we observe fluctuations in the impact on confidence across different scales. Finally, we propose an explanation for quantization loss based on confidence levels, indicating that quantization disproportionately affects samples where the full model exhibited low confidence levels in the first place.We make our code and quantized models publicly available.",
+}
+```
+
+```
+[When Quantization Affects Confidence of Large Language Models?](https://aclanthology.org/2024.findings-naacl.124) (Proskurina et al., Findings 2024)
+```
