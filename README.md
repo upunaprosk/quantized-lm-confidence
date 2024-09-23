@@ -21,7 +21,7 @@ Paper pre-print is available via: https://arxiv.org/abs/2405.00632.
 * numpy 1.25.2
 * datasets 2.19.2
 
-**Used quantized models for the experiments can be found here: https://huggingface.co/iproskurina?search_models=GPTQ** (see models section).
+**The quantized models used for the experiments can be found here: https://huggingface.co/iproskurina?search_models=GPTQ** (see models section).
 
 ## Usage
 <details>
