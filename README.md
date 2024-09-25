@@ -1,6 +1,6 @@
 # How quantization affects the confidence of Large Language Models?
 
-This repository contains code for the paper **When Quantization Affects Confidence of Large Language Models?** accepted to NAACL 2024. 
+This repository contains code for the paper **When Quantization Affects Confidence of Large Language Models?** accepted to NAACL 2024.  
 Link to the paper: [aclanthology.org/2024.findings-naacl.124](https://aclanthology.org/2024.findings-naacl.124/).
 
 <p align="center">
